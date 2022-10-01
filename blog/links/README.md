@@ -13,4 +13,12 @@ links:
         img: /img/links/vscode.jpeg
         desc: Visual Studio Code for the Web
   - title: The Game is On
+      - sitename: MineSweeper
+        url: https://game.just4dream.club/MineSweeper/
+        img: /img/links/minesweeper.png
+        desc: Just have fun ~
+      - sitename: RogueFable3
+        url: https://game.just4dream.club/RogueFable3/
+        img: /img/links/roguefable3.jpeg
+        desc: Pixel Rogue Dungeon TimeKiller
 ---
