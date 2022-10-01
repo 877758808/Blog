@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 export default defineUserConfig({
   title: "心安乡",
-  description: "Yuxiao Feng (Emo) is a visitor sitting in Lake Pavilion.",
+  description: "Yuxiao Feng (Emo) is a visitor sitting in Lake Heart Pavilion.",
 
   head: [
     [
@@ -16,7 +16,7 @@ export default defineUserConfig({
         rel: "icon",
         type: "image/png",
         sizes: "16x16",
-        href: `/img/logo/favicon-16x16.png`
+        href: `/img/logo/favicon-16x16.jpg`
       }
     ],
     [
@@ -25,7 +25,7 @@ export default defineUserConfig({
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        href: `/img/logo/favicon-32x32.png`
+        href: `/img/logo/favicon-32x32.jpg`
       }
     ],
     ["meta", { name: "application-name", content: "Emo" }],
@@ -36,7 +36,7 @@ export default defineUserConfig({
     ],
     [
       "link",
-      { rel: "apple-touch-icon", href: `/img/logo/apple-touch-icon.png` }
+      { rel: "apple-touch-icon", href: `/img/logo/apple-touch-icon.jpg` }
     ],
     ["meta", { name: "theme-color", content: "#377bb5" }],
     ["meta", { name: "msapplication-TileColor", content: "#377bb5" }]
