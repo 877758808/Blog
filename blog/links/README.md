@@ -13,6 +13,7 @@ links:
         img: /img/links/vscode.jpeg
         desc: Visual Studio Code for the Web
   - title: The Game is On
+    items:
       - sitename: MineSweeper
         url: https://game.just4dream.club/MineSweeper/
         img: /img/links/minesweeper.png
