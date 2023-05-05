@@ -1,4 +1,4 @@
-name: Build And Deploy To Aliyun ECS
+name: Build And Deploy To Tencent ECS
 
 on:                               
   push:
@@ -6,7 +6,6 @@ on:
 
 jobs:                             
   build-and-deploy:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest        
     steps:                        
     - uses: actions/checkout@v3
@@ -17,10 +16,10 @@ jobs:
         node-version: '16.x' 
 
     - name: Install dependencies
-      run: npm install --force
+      run: pnpm install --frozen-lockfile
 
-    - name: Build static
-      run: npm run build
+    - name: Build site
+      run: pnpm build
 
     - name: Deploy to tencent server        
       uses: easingthemes/ssh-deploy@v3.0.0      
