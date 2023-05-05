@@ -1,1 +1,1 @@
-# Blog
+# Emo Blog
