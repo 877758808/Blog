@@ -1,10 +1,8 @@
 name: Build And Deploy To Aliyun ECS
 
 on:                               
-  pull_request:
-    branches: [ main ]
-    types:
-      - closed
+  push:
+    branches: [ "master" ]
 
 jobs:                             
   build-and-deploy:
