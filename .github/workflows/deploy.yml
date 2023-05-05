@@ -1,48 +1,35 @@
-# This is a basic workflow to help you get started with Actions
+name: Build And Deploy To Aliyun ECS
 
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
-  push:
-    branches: [ "master" ]
+on:                               
   pull_request:
-    branches: [ "master" ]
+    branches: [ main ]
+    types:
+      - closed
 
-jobs:
+jobs:                             
   build-and-deploy:
-    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest        
+    steps:                        
+    - uses: actions/checkout@v3
 
-    env:
-      NODE_VERSION: '16'
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x' 
 
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+    - name: Install dependencies
+      run: npm install --force
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 7
+    - name: Build static
+      run: npm run build
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build site
-        run: pnpm build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: blog/.vuepress/dist
-
+    - name: Deploy to tencent server        
+      uses: easingthemes/ssh-deploy@v3.0.0      
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.BLOG_SSHKEY }} 
+        ARGS: "-avzr --delete"
+        SOURCE: "dist/*"
+        REMOTE_HOST: ${{ secrets.BLOG_HOST }}
+        REMOTE_USER: ${{ secrets.BLOG_USER }}
+        TARGET: "/var/www/html/"

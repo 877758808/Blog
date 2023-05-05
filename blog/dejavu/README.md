@@ -3,9 +3,9 @@ layout: Post
 title: 极端优雅的世界
 subtitle: 《极乐》衍生
 author: 唐雎
-date: 2022-09-30
+date: 2013-09-20
 useHeaderImage: true
-headerImage: /img/home-bg/29.jpg
+headerImage: /img/in-post/dejavu.jpg
 headerMask: rgba(40, 57, 101, .4)
 giscus: false
 catalog: true
