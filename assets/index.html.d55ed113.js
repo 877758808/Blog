@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5e8526d5","path":"/tags/devops/","title":"DevOps | Tags","lang":"en-US","frontmatter":{"title":"DevOps | Tags","layout":"Tags","blog":{"type":"category","name":"DevOps","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{e as data};
