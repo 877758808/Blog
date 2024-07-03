@@ -45,7 +45,7 @@ export default defineUserConfig({
   bundler: viteBundler(),
 
   theme: gungnirTheme({
-    repo: "877758808/Blog",
+    repo: "BraveEggTart/braveeggtart.github.io",
     docsDir: "blog",
     docsBranch: "master",
 
@@ -57,12 +57,12 @@ export default defineUserConfig({
       avatar: "/img/avatar.jpg",
       description: "我与我周旋久，宁作我",
       sns: {
-        // github: "877758808",
+        // github: "BraveEggTart",
         // linkedin: "",
         // facebook: "",
         // twitter: "",
         // zhihu: "",
-        // email: "zp5fyb@163.com",
+        // email: "braveeggtart@gmail.com",
         // rss: "",
       }
     },
@@ -132,7 +132,7 @@ export default defineUserConfig({
       },
       {
         text: "Github",
-        link: "https://github.com/877758808/",
+        link: "https://github.com/BraveEggTart/",
         icon: "ri-github-line"
       }
     ],
