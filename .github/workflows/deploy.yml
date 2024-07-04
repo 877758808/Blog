@@ -20,7 +20,7 @@ jobs:
       run: npm install --frozen-lockfile
 
     - name: Build site
-      run: npm build
+      run: npm run build
 
     - name: Deploy to tencent server        
       uses: easingthemes/ssh-deploy@v3.0.0      
