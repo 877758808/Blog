@@ -1,9 +1,10 @@
 import { viteBundler } from "@vuepress/bundler-vite";
-import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+// import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { defineUserConfig } from "vuepress";
 import { gungnirTheme } from "vuepress-theme-gungnir";
+import { rssPlugin } from "@renovamen/vuepress-plugin-rss"
 
-const isProd = process.env.NODE_ENV === "production";
+// const isProd = process.env.NODE_ENV === "production";
 
 export default defineUserConfig({
   title: "心安乡",
@@ -165,6 +166,17 @@ export default defineUserConfig({
       lineNumbers: false
     }
   },
+
+  plugins: [
+    rssPlugin({
+      siteURL: "https://just4dream.club",  // site URL (required)
+      // title: "BraveEggTart's blog",  // site title (optional, default: `themeConfig.title`)
+      description: "BraveEggTart's blog",  // site description (optional, default: "")
+      copyright: "BraveEggTart 2019-2024",  // site copyright (optional, default: "")
+      count: 20,  // number of posts to be generated (optional, default: 20)
+      filter: (page) => true  // filter function to choose which posts to be generated (optional, default: (page) => true)
+    })
+  ]
 
   // plugins: [
   //   docsearchPlugin({
