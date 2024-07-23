@@ -10,7 +10,7 @@ links:
         desc: The source code of my blog
       - sitename: NSFW
         url: https://nsfw.just4dream.club/
-        img: /img/links/vscode.jpeg
+        img: /img/links/check.jpeg
         desc: Check if the word is nsfw
   - title: The Game is On
     items:
