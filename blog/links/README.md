@@ -8,10 +8,10 @@ links:
         url: https://github.com/BraveEggTart/braveeggtart.github.io
         img: /img/links/blog.svg
         desc: The source code of my blog
-      # - sitename: VSCode Online
-      #   url: https://code.just4dream.club/
-      #   img: /img/links/vscode.jpeg
-      #   desc: Visual Studio Code for the Web
+      - sitename: NSFW
+        url: https://nsfw.just4dream.club/
+        img: /img/links/vscode.jpeg
+        desc: Check if the word is nsfw
   - title: The Game is On
     items:
       - sitename: MineSweeper
