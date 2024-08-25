@@ -12,6 +12,22 @@ links:
         url: https://nsfw.just4dream.club/
         img: /img/links/check.jpeg
         desc: Check if the word is nsfw
+      - sitename: Unity Samples
+        url: https://unity.just4dream.club/
+        img: /img/links/unity.png
+        desc: Learn && Play
+      - sitename: Board
+        url: https://board.just4dream.club/
+        img: /img/links/board.jpg
+        desc: Share your mind
+      - sitename: Docs
+        url: https://docs.just4dream.club/
+        img: /img/links/docs.jpg
+        desc: Read my mind
+      - sitename: Monitor
+        url: https://nezha.just4dream.club/
+        img: /img/links/server.png
+        desc: That 's all
   - title: The Game is On
     items:
       - sitename: MineSweeper
@@ -22,4 +38,8 @@ links:
         url: https://game.just4dream.club/RogueFable3/
         img: /img/links/roguefable3.jpeg
         desc: Pixel Rogue Dungeon TimeKiller
+      - sitename: Cards
+        url: https://cards.just4dream.club/
+        img: /img/links/cards.jpg
+        desc: A Web Card Games
 ---
